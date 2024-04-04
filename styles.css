@@ -1,0 +1,113 @@
+.header {
+    background-color: #1b4879;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1, .header h2 {
+    margin: 0;
+}
+
+.converter {
+    margin: 10px;
+    text-align: center;
+}
+
+.converter p {
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow flex items to wrap onto multiple lines */
+}
+
+.usa-block, .canada-block {
+    display: flex;
+    align-items: center;
+}
+
+.flag-usa, .flag-canada {
+    background-color: #1b4879;
+    height: 55px;
+    width: 80px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -9px;
+}
+
+input {
+    padding: 10px;
+    margin-right: 10px;
+    height: 40px;
+    width: 150px;
+}
+
+.converting-arrow {
+    font-size: 36px;
+    margin: 0 20px;
+}
+
+.arrow-down {
+    color: white;
+    font-size: small;
+    text-align: center;
+}
+
+.flag-usa img, .flag-canada img {
+    max-height: 30%;
+    width: auto;
+}
+
+.button-wrapper button {
+    padding: 10px 20px;
+    background-color: #1b4879;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+}
+
+.main-bwrapper{
+    position: relative;
+    height: 100px;
+    width: 100%;
+    max-width: 500px; /* Limit the maximum width of the wrapper */
+    margin: auto;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button {
+    position: relative;
+    float: right;
+}
+
+span {
+    margin-left: 10px;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 600px) {
+    .flag-usa, .flag-canada {
+        width: 60px; /* Adjust width for smaller screens */
+    }
+    .converting-arrow{
+        display: none;
+    }
+   
+
+
+    input {
+        width: 120px; /* Adjust input width for smaller screens */
+    }
+}
