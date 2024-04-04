@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>US Dollar to Canadian Dollar</h1>
+            <h2>Convert USD to CAD at real exchange rate</h2>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="converter">
+            <p>Amount</p>
+            <div class="usa-block">
+                <div class="input-us">
+                    <input id="usAmount"type="number">
+                </div>
+                <div class="flag-usa">
+                    <img src="./img/usa-flag" alt="USA Flag">
+                    <span class="arrow-down">&#x2304;</span>
+
+                </div>
+            </div>
+        </div>
+        <div class="converting-arrow">&#8644;</div>
+        <div class="converter">
+            <p>Converted To</p>
+            <div class="canada-block">
+                <div class="input-us">
+                    <input type="number" placeholder="" id="cadRate">
+                </div>
+                <div class="flag-canada">
+                    <img src="./img/canada-flag.jpg" alt="Canada Flag">
+                    <span class="arrow-down">&#x2304;</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-bwrapper">
+        <div class="button-wrapper">
+            <button onclick="convertUSDToCAD()">Convert</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
